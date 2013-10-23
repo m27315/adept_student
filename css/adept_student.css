@@ -1,0 +1,455 @@
+textarea {
+	width: 38em;
+	height: 5em;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: sans;
+	font-size: 1em;
+}
+
+input, select {
+	width: 38em;
+	margin: 0.5em;
+	padding: 0.5em;
+	font-family: sans;
+	font-size: 1em;
+}
+
+.odd {
+	background-color: #eee;
+}
+
+.even {
+	background-color: #ccc;
+}
+
+.question_box,.section_box,.series_box {
+	position: relative;
+	/* border: 1px dashed gray; */
+	padding: 10px;
+	margin: 5px;
+}
+
+.question_details,.section_details,.series_details {
+	position: relative;
+	top: 0;
+	left: 130px;
+	width: 60em;
+	padding: 0;
+	margin: 0;
+}
+
+.question_details fieldset,.section_details fieldset,.series_details fieldset {
+	position: relative;
+	left: -100px;
+}
+
+label {
+	position: relative;
+	float: left;
+	clear: both;
+	vertical-align: top;
+	width: 10em;
+}
+
+.question_details input,.question_details textarea,.section_details input,.section_details textarea,.series_details input,.series_details textarea {
+	position: relative;
+	float: left;
+}
+
+.question_actions,.section_actions,.series_actions {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.top,.mid2,.bot2 {
+	width: 40px;
+	min-height: 40px;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	overflow: hidden;
+	list-style: none;
+}
+
+.top {
+	position: relative;
+	top: 0;
+	/* border: 1pt solid red; */
+	vertical-align: top;
+}
+
+.mid {
+	position: absolute;
+	/* left: 50px; */
+	top: 50%;
+	min-height: 40px;
+	/* border: 1pt solid blue; */
+	vertical-align: middle;
+}
+
+.bot {
+	position: absolute;
+	left: 10px;
+	bottom: -10px;
+	/* border: 1pt solid green; */
+	vertical-align: bottom;
+	bottom: 0;
+}
+
+.mid2 {
+	position: relative !important;
+}
+
+.bot2 {
+	position: relative !important;
+}
+
+.top li,.mid2 li,.bot2 li {
+	position: relative !important;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	display: inline; /* duplicated for IE 5/Win */
+	list-style-type: none;
+	margin: 0;
+	display: inline; /* duplicated for IE 5/Win */
+}
+
+.top a,.mid2 a,.bot2 a {
+	position: relative !important;
+	height: 0px !important;
+	height /**/: 40px; /* IE 5/Win hack */
+	padding: 40px 0 0 0;
+	overflow: hidden;
+	float: left;
+}
+
+.bot {
+	margin: 0 0 10px 0;
+}
+
+.mid {
+	margin: -20px 0 0 0;
+	vertical-align: middle;
+}
+
+.mid2 {
+	top: 7px;
+}
+
+.move_up a {
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	background: url(images/uber_sprite.png) top left no-repeat;
+}
+
+.move_up a:hover {
+	background-position: 0 -40px;
+}
+
+.move_up a:active,.move_up a.selected {
+	background-position: 0 -80px;
+}
+
+.move_top a {
+	width: 40px;
+	height: 40px;
+	background: url(images/uber_sprite.png) top left no-repeat;
+	background-position: -40px 0px;
+}
+
+.move_top a:hover {
+	background-position: -40px -40px;
+}
+
+.move_top a:active,.move_up a.selected {
+	background-position: -40px -80px;
+}
+
+.insert_above a {
+	width: 40px;
+	height: 40px;
+	background: url(images/uber_sprite.png) top left no-repeat;
+	background-position: -80px 0px;
+}
+
+.insert_above a:hover {
+	background-position: -80px -40px;
+}
+
+.insert_above a:active,.move_up a.selected {
+	background-position: -80px -80px;
+}
+
+.move_down a {
+	width: 40px;
+	height: 40px;
+	background: url(images/uber_sprite.png) top left no-repeat;
+	background-position: -120px 0px;
+}
+
+.move_down a:hover {
+	background-position: -120px -40px;
+}
+
+.move_down a:active,.move_up a.selected {
+	background-position: -120px -80px;
+}
+
+.move_bottom a {
+	width: 40px;
+	height: 40px;
+	background: url(images/uber_sprite.png) top left no-repeat;
+	background-position: -160px 0px;
+}
+
+.move_bottom a:hover {
+	background-position: -160px -40px;
+}
+
+.move_bottom a:active,.move_up a.selected {
+	background-position: -160px -80px;
+}
+
+.insert_below a {
+	width: 40px;
+	height: 40px;
+	background: url(images/uber_sprite.png) top left no-repeat;
+	background-position: -200px 0px;
+}
+
+.insert_below a:hover {
+	background-position: -200px -40px;
+}
+
+.insert_below a:active,.move_up a.selected {
+	background-position: -200px -80px;
+}
+
+.delete a {
+	width: 40px;
+	height: 40px;
+	background: url(images/uber_sprite.png) top left no-repeat;
+	background-position: -240px 0px;
+}
+
+.delete a:hover {
+	background-position: -240px -40px;
+}
+
+.delete a:active,.move_up a.selected {
+	background-position: -240px -80px;
+}
+
+.section {
+	list-style-type: none;
+	margin-left: 2.9em;
+	padding-left: 0;
+}
+
+.lesson {
+	/* width: 20px; */
+	min-height: 20px;
+	margin: 0;
+	padding: 0;
+	/* display: inline; */
+	overflow: hidden;
+	list-style-type: none;
+	vertical-align: middle;
+}
+
+.lesson li {
+	/* position: relative !important; */
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	list-style: none;
+}
+
+.lesson a {
+	margin-top: 0.5em;
+	/* position: relative !important; */
+    height: 0px !important;
+    height /**/: 20px; /* IE 5/Win hack */
+	padding: 20px 0 0 0;
+	overflow: hidden;
+	float: left;
+}
+.lesson input {
+	/* position: left center !important; */
+	width: 35em;
+	margin: 0.5em;
+	padding: 0.5em;
+	margin-top: 0;
+	font-family: sans;
+	font-size: 1em;
+	/* top: -15px; */
+	overflow: visible !important;
+}
+
+.lesson .move_up a {
+	width: 20px;
+	height: 20px;
+	background: url(images/uber_sprite_20x20.png) left center no-repeat;
+	background-position: 0 0;
+}
+
+.lesson .move_up a:hover {
+	background-position: 0 -20px;
+}
+
+.lesson .move_up a:active,.lesson .move_up a.selected {
+	background-position: 0 -40px;
+}
+
+.lesson .move_top a {
+	width: 20px;
+	height: 20px;
+	background: url(images/uber_sprite_20x20.png) left center no-repeat;
+	background-position: -20px 0px;
+}
+
+.lesson .move_top a:hover {
+	background-position: -20px -20px;
+}
+
+.lesson .move_top a:active,.lesson .move_up a.selected {
+	background-position: -20px -40px;
+}
+
+.lesson .insert_above a {
+	width: 20px;
+	height: 20px;
+	background: url(images/uber_sprite_20x20.png) left center no-repeat;
+	background-position: -40px 0px;
+}
+
+.lesson .insert_above a:hover {
+	background-position: -40px -20px;
+}
+
+.lesson .insert_above a:active,.lesson .move_up a.selected {
+	background-position: -40px -40px;
+}
+
+.lesson .move_down a {
+	width: 20px;
+	height: 20px;
+	background: url(images/uber_sprite_20x20.png) left center no-repeat;
+	background-position: -60px 0px;
+}
+
+.lesson .move_down a:hover {
+	background-position: -60px -20px;
+}
+
+.lesson .move_down a:active,.move_up a.selected {
+	background-position: -60px -40px;
+}
+
+.lesson .move_bottom a {
+	width: 20px;
+	height: 20px;
+	background: url(images/uber_sprite_20x20.png) left center no-repeat;
+	background-position: -80px 0px;
+}
+
+.lesson .move_bottom a:hover {
+	background-position: -80px -20px;
+}
+
+.lesson .move_bottom a:active,.lesson .move_up a.selected {
+	background-position: -80px -40px;
+}
+
+.lesson .insert_below a {
+	width: 20px;
+	height: 20px;
+	background: url(images/uber_sprite_20x20.png) left center no-repeat;
+	background-position: -100px 0px;
+}
+
+.lesson .insert_below a:hover {
+	background-position: -100px -20px;
+}
+
+.lesson .insert_below a:active,.lesson .move_up a.selected {
+	background-position: -100px -40px;
+}
+
+.lesson .delete a {
+	width: 20px;
+	height: 20px;
+	background: url(images/uber_sprite_20x20.png) left center no-repeat;
+	background-position: -120px 0px;
+}
+
+.lesson .delete a:hover {
+	background-position: -120px -20px;
+}
+
+.lesson .delete a:active,.lesson .move_up a.selected {
+	background-position: -120px -40px;
+}
+
+.lesson .edit a {
+	width: 20px;
+	height: 20px;
+	background: url(images/uber_sprite_20x20.png) left center no-repeat;
+	background-position: -140px 0px;
+}
+
+.lesson .edit a:hover {
+	background-position: -140px -20px;
+}
+
+.lesson .edit a:active,.lesson .move_up a.selected {
+	background-position: -140px -40px;
+}
+
+.highlight {
+	background: #FFFF00 !important;
+}
+
+.required:after {
+	color: red;
+	content: " *";
+}
+
+.comboBox {
+    position: relative;
+}
+
+.comboBox div
+{
+    padding: 0;
+    margin: 0;
+}
+.comboList {
+	width: 36.2em;
+	margin: 0.5em;
+	margin-top: 0;
+	padding: 0.6em;
+	font-family: sans;
+	font-size: 1em;
+}
+.comboEdit {
+	position: absolute !important;
+	margin: 0.6em !important;
+	margin-top: 0.1em !important;
+	width: 33.5em !important;
+	padding: 0.5em !important;
+	font-family: sans;
+	font-size: 1em;
+	overflow: hidden;
+	display: inline;
+	z-index: 1;
+}
