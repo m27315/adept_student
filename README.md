@@ -25,9 +25,7 @@ A traditional [LAMP](http://en.wikipedia.org/wiki/LAMP_\(software_bundle\)):
 * MySQL 5
 
 # Installation
-1. Download and unpack software to web-server directory using the icons on this page, or by cloning directly from Github:
-
-`git clone https://github.com/m27315/adept_student.git adept_student`
+1. Download and unpack software to web-server directory using the icons on this page, or by cloning directly from Github.
 
 2. Create a separate MySQL database and user for this app.
 
@@ -35,9 +33,7 @@ A traditional [LAMP](http://en.wikipedia.org/wiki/LAMP_\(software_bundle\)):
 
 4. Edit the new `config.php` to match your MySQL database and user credentials.
 
-5. In your web-browser, visit:
-
-`http://<your_web_domain/adept_student/edit.php`
+5. In your web-browser, visit:  `http://<your_web_domain>/adept_student/edit.php`
 
 Currently, classes may only be edited (edit.php).  The actual survey taking portion (index.php) has not been developed yet.
 
@@ -55,5 +51,6 @@ Here are a list of TODO items in no particular order:
 * Develop survey taking portion of app.
 * Develop survey reporting statistics.
 * Develop an optional login system for resuming long classes and viewing past results.
+* Develop an optional login system (or document Apache password/deny system) to firewall course editing from course taking.
 * Develop a web-based installation script, similar to phpBB and other PHP web-apps.
 * Develop a theme installation and switcher, similar to Wordpress.
