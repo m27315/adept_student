@@ -68,17 +68,12 @@
 <a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
 
 <ol>
-<li>Download and unpack software to web-server directory using the icons on this page, or by cloning directly from Github:</li>
-</ol><p><code>git clone https://github.com/m27315/adept_student.git adept_student</code></p>
-
-<ol>
+<li><p>Download and unpack software to web-server directory using the icons on this page, or by cloning directly from Github.</p></li>
 <li><p>Create a separate MySQL database and user for this app.</p></li>
 <li><p>Inside the <code>adept_student</code> directory, copy <code>config.sample.php</code> to <code>config.php</code>.</p></li>
 <li><p>Edit the new <code>config.php</code> to match your MySQL database and user credentials.</p></li>
-<li><p>In your web-browser, visit:</p></li>
-</ol><p><code>http://&lt;your_web_domain/adept_student/edit.php</code></p>
-
-<p>Currently, classes may only be edited (edit.php).  The actual survey taking portion (index.php) has not been developed yet.</p>
+<li><p>In your web-browser, visit:  <code>http://&lt;your_web_domain&gt;/adept_student/edit.php</code></p></li>
+</ol><p>Currently, classes may only be edited (edit.php).  The actual survey taking portion (index.php) has not been developed yet.</p>
 
 <h1>
 <a name="feedback" class="anchor" href="#feedback"><span class="octicon octicon-link"></span></a>Feedback</h1>
@@ -98,6 +93,7 @@
 <li>Develop survey taking portion of app.</li>
 <li>Develop survey reporting statistics.</li>
 <li>Develop an optional login system for resuming long classes and viewing past results.</li>
+<li>Develop an optional login system (or document Apache password/deny system) to firewall course editing from course taking.</li>
 <li>Develop a web-based installation script, similar to phpBB and other PHP web-apps.</li>
 <li>Develop a theme installation and switcher, similar to Wordpress.</li>
 </ul>
